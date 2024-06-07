@@ -43,13 +43,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Dotswan\\MapPicker\\": "src/",
-            "Dotswan\\MapPicker\\Database\\Factories\\": "database/factories/"
+            "Deka\\MapPicker\\": "src/",
+            "Deka\\MapPicker\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dotswan\\MapPicker\\Tests\\": "tests/"
+            "Deka\\MapPicker\\Tests\\": "tests/"
         }
     },
     "scripts": {
