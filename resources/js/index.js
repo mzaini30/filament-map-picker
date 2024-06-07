@@ -1,7 +1,7 @@
 import * as L from 'leaflet';
 import 'leaflet-fullscreen';
 
-window.mapPicker = ($wire, config) => {
+window.dekaMapPicker = ($wire, config) => {
     return {
         map: null,
         tile: null,
