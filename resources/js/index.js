@@ -7,8 +7,18 @@ window.mapPicker = ($wire, config) => {
         tile: null,
         marker: null,
         polygon: [],
+        refreshMap(){
+            console.log('Refresh Map')
+            this.map.flyTo(this.getCoordinates());
+            // this.updateMarker();
+            $wire.$refresh()
+        },
         createMap: function (el) {
+
+
             const that = this;
+
+            $wire.on('refreshMap', this.refreshMap.bind(this))
 
             this.map = L.map(el, config.controls);
             this.map.on("load", () => {

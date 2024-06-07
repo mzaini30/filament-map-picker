@@ -5,3 +5,6 @@
 .map-icon {
     stroke: #dbeafe;
 }
+.leaflet-draw-toolbar a {
+    background-image: linear-gradient(transparent,transparent),url('/filament-map-picker/spritesheet.svg');
+}
