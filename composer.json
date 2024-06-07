@@ -1,5 +1,5 @@
 {
-    "name": "dotswan/filament-map-picker",
+    "name": "deka/filament-map-picker",
     "description": "Easily pick and retrieve geo-coordinates using a map-based interface in your Filament applications.",
     "keywords": [
         "dotswan",
@@ -10,10 +10,10 @@
         "filament-map-picker",
         "filament-v3"
     ],
-    "homepage": "https://github.com/dotswan/filament-map-picker",
+    "homepage": "https://github.com/mzaini30/filament-map-picker",
     "support": {
-        "issues": "https://github.com/dotswan/filament-map-picker/issues",
-        "source": "https://github.com/dotswan/filament-map-picker"
+        "issues": "https://github.com/mzaini30/filament-map-picker/issues",
+        "source": "https://github.com/mzaini30/filament-map-picker"
     },
     "license": "MIT",
     "authors": [
@@ -69,10 +69,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Dotswan\\MapPicker\\MapPickerServiceProvider"
+                "Deka\\MapPicker\\MapPickerServiceProvider"
             ],
             "aliases": {
-                "MapPicker": "Dotswan\\MapPicker\\Facades\\MapPicker"
+                "MapPicker": "Deka\\MapPicker\\Facades\\MapPicker"
             }
         }
     },

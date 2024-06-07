@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dotswan\MapPicker\Contracts;
+namespace Deka\MapPicker\Contracts;
 
 interface MapOptions
 {

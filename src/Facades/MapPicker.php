@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dotswan\MapPicker\Facades;
+namespace Deka\MapPicker\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -13,6 +13,6 @@ class MapPicker extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Dotswan\MapPicker\MapPicker::class;
+        return \Deka\MapPicker\MapPicker::class;
     }
 }

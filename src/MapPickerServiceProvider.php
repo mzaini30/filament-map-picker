@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Dotswan\MapPicker;
+namespace Deka\MapPicker;
 
-use Filament\Support\Assets\Js;
-use Filament\Support\Assets\Css;
-use Filament\Support\Assets\Asset;
-use Spatie\LaravelPackageTools\Package;
-use Filament\Support\Facades\FilamentIcon;
-use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Assets\AlpineComponent;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Filament\Support\Assets\Asset;
+use Filament\Support\Assets\Css;
+use Filament\Support\Assets\Js;
+use Filament\Support\Facades\FilamentAsset;
+use Filament\Support\Facades\FilamentIcon;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class MapPickerServiceProvider extends PackageServiceProvider
 {
@@ -28,7 +28,7 @@ class MapPickerServiceProvider extends PackageServiceProvider
             ->hasInstallCommand(function (InstallCommand $command): void {
                 $command
                     ->publishConfigFile()
-                    ->askToStarRepoOnGitHub('dotswan/filament-map-picker');
+                    ->askToStarRepoOnGitHub('mzaini30/filament-map-picker');
             });
 
         $configFileName = $package->shortName();
@@ -69,7 +69,7 @@ class MapPickerServiceProvider extends PackageServiceProvider
 
     protected function getAssetPackageName(): ?string
     {
-        return 'dotswan/filament-map-picker';
+        return 'deka/filament-map-picker';
     }
 
     /**
@@ -80,12 +80,12 @@ class MapPickerServiceProvider extends PackageServiceProvider
         return [
 
             // AlpineComponent::make('map-picker', __DIR__ . '/../resources/dist/components/filament-map-picker.js'),
-            Css::make('filament-map-picker-styles', __DIR__ . '/../resources/dist/filament-map-picker.css'),
-            Js::make('filament-map-picker-scripts', __DIR__ . '/../resources/dist/filament-map-picker.js'),
+            Css::make('filament-map-picker-styles', __DIR__.'/../resources/dist/filament-map-picker.css'),
+            Js::make('filament-map-picker-scripts', __DIR__.'/../resources/dist/filament-map-picker.js'),
 
             // leaflet draw
-            Css::make('leaflet-draw-styles', __DIR__ . '/../resources/leaflet-draw/leaflet-draw.css'),
-            Js::make('leaflet-draw-scripts', __DIR__ . '/../resources/leaflet-draw/leaflet-draw.js'),
+            Css::make('leaflet-draw-styles', __DIR__.'/../resources/leaflet-draw/leaflet-draw.css'),
+            Js::make('leaflet-draw-scripts', __DIR__.'/../resources/leaflet-draw/leaflet-draw.js'),
         ];
     }
 
